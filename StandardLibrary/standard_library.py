@@ -1,7 +1,7 @@
 # standard_library.py
 """Python Essentials: The Standard Library.
 <Name> Audrey Nelson
-<Class> MTH 338
+<Class> MTH 420
 <Date> 6/8/23
 """
 import calculator as cl
