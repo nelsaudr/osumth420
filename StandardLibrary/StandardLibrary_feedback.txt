@@ -4,3 +4,9 @@ standard_library.py has not been modified yet
 
 -------------------------------------------------------------------------------
 
+06/13/23 20:21
+
+ModuleNotFoundError while loading 'standard_library.py': No module named 'calculator'
+
+-------------------------------------------------------------------------------
+
