@@ -4,3 +4,73 @@ drazin.py has not been modified yet
 
 -------------------------------------------------------------------------------
 
+06/14/23 00:49
+
+Problem 1 (10 points):
+Score += 10
+
+Problem 2 (10 points):
+drazin_inverse(A) failed for A =
+[[ 10.  -8.   6.  -3.]
+ [ 12. -10.   8.  -4.]
+ [  1.  -1.   1.   0.]
+ [ -2.   2.  -2.   2.]]
+	Correct response:
+[[ 2.  -1.5  1.  -0.5]
+ [ 2.  -1.5  1.  -0.5]
+ [-1.   1.  -1.   1. ]
+ [-2.   2.  -2.   2. ]]
+	Student response:
+[[0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+drazin_inverse(A) failed for A =
+[[-1.    -1.    -1.   ]
+ [-1.     0.333 -1.   ]
+ [-1.    -1.    -1.   ]]
+	Correct response:
+[[-0.063 -0.375 -0.063]
+ [-0.375  0.75  -0.375]
+ [-0.063 -0.375 -0.062]]
+	Student response:
+[[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]
+drazin_inverse(A) failed for A =
+[[1. 0.]
+ [0. 0.]]
+	Correct response:
+[[1. 0.]
+ [0. 0.]]
+	Student response:
+[[0. 0.]
+ [0. 0.]]
+drazin_inverse(A) failed for invertible matrix A =
+[[0.517 0.112 0.204 0.438]
+ [0.665 0.326 0.763 0.51 ]
+ [0.094 0.736 0.838 0.575]
+ [0.652 0.491 0.526 0.131]]
+	Correct response:
+[[ 0.822 -0.07  -0.808  1.069]
+ [ 1.29  -2.997  1.255  1.852]
+ [-2.788  3.02  -0.368 -0.816]
+ [ 2.276 -0.552  0.802 -1.356]]
+	Student response:
+[[0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+Score += 2
+
+Problem 3 (10 points):
+NotImplementedError: Problem 3 Incomplete
+
+Code Quality (20 points):
+Code can be improved for effective_resistance()
+Score += 0
+
+Total score: 12/50 = 24.0%
+
+-------------------------------------------------------------------------------
+
