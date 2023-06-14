@@ -24,7 +24,7 @@ def prob1():
     """
     x = cp.Variable(3, nonneg = True)
     c = np.array([2, 1, 3])
-    objective = cp.Minimize(c.T @ x)
+    objective = cp.Minimize(c @ x)
     A= np.array([1, 2, 0])
     B= np.array([0, 1, -4])
     C= np.array([2, 10, 3])
@@ -49,7 +49,10 @@ def l1Min(A, b):
         The optimizer x (ndarray)
         The optimal value (float)
     """
-    x = cp.Variable((len(A[1]),1))
+    #x = cp.Variable((len(A[1]),1))
+    n = A.shape[1]
+    x = cp.Variable(n)
+ 
     print(x.shape)
     objective = cp.Minimize(cp.norm(x, 1))
     constraints = [A @ x == b]
@@ -102,25 +105,28 @@ def prob5(A, b):
         The optimizer x (ndarray)
         The optimal value (float)
     """
-    x = cp.Variable((len(A[1]),1), nonneg = True)
+    #x = cp.Variable((len(A[1]),1), nonneg = True)
+    n = A.shape[1]
+    x = cp.Variable(n, nonneg=True)
+
     print(x.shape)
     objective = cp.Minimize(cp.norm(A @ x-b, 2))
-    constraints = [cp.sum(cp.sqrt(cp.square(x))) == 1]
+    constraints = [cp.sum(x) == 1]
     problem = cp.Problem(objective, constraints)
     problem.solve()
     return x.value, problem.solve()
 
     
 
-print(prob1())
+#print(prob1())
 
-A=np.array([[1,2,1,1],[0,3,-2,-1]])
-b=np.array([[7],[4]])
-print(l1Min(A, b))
+#A=np.array([[1,2,1,1],[0,3,-2,-1]])
+#b=np.array([[7],[4]])
+#print(l1Min(A, b))
 
-print(prob4())
+#print(prob4())
 
-print(prob5(A, b))
+#print(prob5(A, b))
 
 # # Problem 6
 # def prob6():
